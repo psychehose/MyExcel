@@ -6,21 +6,20 @@
 // Forward declaration
 class Table;
 
-class Cell {
-
+class Cell
+{
 protected:
-    int x, y;
-    Table* table;
-
     std::string data;
+    int x, y;
+    Table *table;
 
 public:
     virtual std::string stringify();
     virtual int to_numeric();
 
-    Cell(std::string data, int x, int y, Table* table);
+    Cell(std::string data, int x, int y, Table *table);
+    virtual ~Cell();
+
 };
-
-
 
 #endif // CELL_H

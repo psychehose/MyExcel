@@ -2,6 +2,7 @@
 #define TABLE_H
 
 #include <string>
+#include <ostream>
 
 // Forward declaration
 class Cell;
@@ -29,6 +30,8 @@ public:
     std::string stringify(int row, int col);
 
     virtual std::string print_table() = 0;
+
+    friend std::ostream &operator<<(std::ostream &os, Table &table);
 };
 
 #endif // TABLE_H
