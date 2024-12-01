@@ -36,6 +36,7 @@ std::string TxtTable::print_table()
 
     int *col_max_wide = new int[max_col_size];
 
+    // 열의 최대 너비 설정
     for (int i = 0; i < max_col_size; ++i)
     {
         unsigned int max_wide = 2;
@@ -50,6 +51,7 @@ std::string TxtTable::print_table()
         col_max_wide[i] = max_wide;
     }
 
+    // 표의 최대 너비 - 헤더 행 출력
     total_table = "    ";
     int total_wide = 4;
     for (int i = 0; i < max_col_size; ++i)
