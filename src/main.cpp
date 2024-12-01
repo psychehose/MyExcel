@@ -18,5 +18,7 @@ int main(int argc, char *argv[])
     std::cout << std::endl
               << table;
 
+    out << table;
+
     return 0;
 }

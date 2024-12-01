@@ -65,6 +65,7 @@ std::string TxtTable::print_table()
             total_wide += max_len + 3;
         }
     }
+    total_table += "\n";
 
     for (int i = 0; i < max_row_size; ++i)
     {
