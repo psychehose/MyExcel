@@ -3,6 +3,7 @@
   "cmake.debugConfig": { "type": "lldb" },
   "cmake.buildDirectory": "${workspaceFolder}/build",
   "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "C_Cpp.intelliSenseEngine": "default",
   "cmake.generator": "Ninja",
   "editor.formatOnSave": true
 }
