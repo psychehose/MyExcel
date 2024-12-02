@@ -18,7 +18,7 @@ protected:
 
 public:
     Table(int max_row_size, int max_col_size);
-    ~Table();
+    virtual ~Table();
 
     void reg_cell(Cell *cell, int row, int col);
 

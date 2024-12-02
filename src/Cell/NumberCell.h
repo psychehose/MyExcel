@@ -10,7 +10,7 @@ protected:
 
 public:
     NumberCell(int x, int y, Table *table, int data);
-    virtual ~NumberCell();
+    ~NumberCell() override;
     std::string stringify() override;
     int to_numeric() override;
 };

@@ -11,7 +11,7 @@ protected:
 
 public:
     StringCell(int x, int y, Table *table, std::string data);
-    virtual ~StringCell();
+    ~StringCell();
 
     std::string stringify() override;
     int to_numeric() override;
