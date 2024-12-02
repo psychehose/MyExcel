@@ -1,5 +1,5 @@
 #include "ExprCell.h"
-#include "Table.h"
+#include "Table/Table.h"
 
 ExprCell::ExprCell(int x, int y, Table *table, std::string data) : Cell(x, y, table), data(data)
 {
