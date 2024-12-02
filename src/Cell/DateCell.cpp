@@ -27,7 +27,13 @@ std::string DateCell::stringify()
 {
     char buffer[50];
     tm temp;
+
+#ifdef _WIN32
     localtime_s(&temp, &data);
+#else
+    localtime_r(&data, &temp);
+#endif
+
     //%F 형식 지정자는 "YYYY-MM-DD" 형식을 의미(예: "2023-12-25")
     strftime(buffer, 50, "%F", &temp);
 
