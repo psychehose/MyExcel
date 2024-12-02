@@ -10,7 +10,7 @@ protected:
 
 public:
     DateCell(int x, int y, Table *table, std::string s);
-    ~DateCell();
+    virtual ~DateCell();
     std::string stringify() override;
     int to_numeric() override;
 };

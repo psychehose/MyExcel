@@ -19,7 +19,7 @@ protected:
 
 public:
     ExprCell(int x, int y, Table *table, std::string data);
-    ~ExprCell();
+    virtual ~ExprCell();
     std::string stringify() override;
     int to_numeric() override;
 };

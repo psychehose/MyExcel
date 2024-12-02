@@ -2,6 +2,9 @@
 #include "Cell/Cell.h"
 
 TxtTable::TxtTable(int row, int col) : Table(row, col) {}
+TxtTable::~TxtTable()
+{
+}
 
 std::string TxtTable::repeat_char(int n, char c)
 {

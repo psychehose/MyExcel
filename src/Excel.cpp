@@ -45,7 +45,7 @@ int Excel::parse_user_input(std::string s)
     std::string to = "";
     for (int i = next; i < s.length(); i++)
     {
-        if (s[i] == ' ' || i == s.length() - 1)
+        if (s[i] == ' ')
         {
             to = s.substr(next, i - next);
             next = i + 1;
