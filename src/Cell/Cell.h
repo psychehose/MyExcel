@@ -9,17 +9,15 @@ class Table;
 class Cell
 {
 protected:
-    std::string data;
     int x, y;
     Table *table;
 
 public:
-    virtual std::string stringify();
-    virtual int to_numeric();
+    virtual std::string stringify() = 0;
+    virtual int to_numeric() = 0;
 
-    Cell(std::string data, int x, int y, Table *table);
+    Cell(int x, int y, Table *table);
     virtual ~Cell();
-
 };
 
 #endif // CELL_H

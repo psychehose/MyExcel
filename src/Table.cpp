@@ -1,5 +1,5 @@
 #include "Table.h"
-#include "Cell.h"
+#include "Cell/Cell.h"
 #include <string>
 
 Table::Table(int max_row_size, int max_col_size) : max_row_size(max_row_size), max_col_size(max_col_size)

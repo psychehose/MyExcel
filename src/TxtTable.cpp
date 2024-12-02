@@ -1,5 +1,5 @@
 #include "TxtTable.h"
-#include "Cell.h"
+#include "Cell/Cell.h"
 
 TxtTable::TxtTable(int row, int col) : Table(row, col) {}
 

@@ -2,7 +2,7 @@
 #include <fstream>
 
 #include "TxtTable.h"
-#include "Cell.h"
+#include "Cell/Cell.h"
 
 int main(int argc, char *argv[])
 {
